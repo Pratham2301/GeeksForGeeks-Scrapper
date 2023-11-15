@@ -65,8 +65,6 @@ const getGfgScores = catchAsyncErrors(async (req, res) => {
             values["userName"] = userName;
             values["totalProblemsSolved"] = totalProblemSolved;
 
-            console.log("values: ", values)
-
             return res.json(
                 {
                     "success": true,
