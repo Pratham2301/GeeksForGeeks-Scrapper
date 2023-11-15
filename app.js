@@ -19,17 +19,17 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 
 app.use(cors({
     origin: [
-        'http://localhost:5173', 
-        'https://enchanting-gold-goose.cyclic.app', 
-        'https://enchanting-gold-goose.cyclic.app/', 
+        'http://localhost:5173',
+        'https://enchanting-gold-goose.cyclic.app',
+        'https://enchanting-gold-goose.cyclic.app/',
         'https://rcoem-coderz.onrender.com',
         'https://rcoem-coderz.onrender.com/',
-        'https://rcoem-coderz.netlify.app', 
-        'https://rcoem-coderz.netlify.app/', 
-        'https://rcoem-coderz.netlify.app/*', 
-        'https://indian-coderz.netlify.app', 
-        'https://indian-coderz.netlify.app/', 
-        'https://indian-coderz.netlify.app/*', 
+        'https://rcoem-coderz.netlify.app',
+        'https://rcoem-coderz.netlify.app/',
+        'https://rcoem-coderz.netlify.app/*',
+        'https://indian-coderz.netlify.app',
+        'https://indian-coderz.netlify.app/',
+        'https://indian-coderz.netlify.app/*',
         '*'
     ],
     methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
@@ -48,7 +48,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/:id", getGfgScores);
 
 app.get("*", (req, res) => {
-    res.send("Welcome to INDIAN CODERZ API");
+    return res.json({ 
+        "success": false,
+        "message": "Welcome to INDIAN CODERZ - GFG API"
+    });
 });
 
 
