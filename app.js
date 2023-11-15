@@ -43,7 +43,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Route Imports
 
-app.post("/getData", getGfgScores);
+app.get("/:id", getGfgScores);
 
 app.get("*", (req, res) => {
     res.send("Welcome to INDIAN CODERZ API");

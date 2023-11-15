@@ -5,9 +5,9 @@ const fetch = require('node-fetch');
 
 const getGfgScores = catchAsyncErrors(async (req, res) => {
 
-    const userName = (req.body.username).trim();
+    const userName = (req.params.id).trim();
 
-    console.log(userName)
+    // console.log(userName)
 
 
     if (!userName) {

@@ -1,7 +1,5 @@
 ## API to fetch geeks-for-geeks problem solving scores
 
-### API ENDPOINT: /getdata
+### API ENDPOINT: /username
 
-### METHOD: POST
-
-### BODY: {username}
+### METHOD: GET
