@@ -7,7 +7,7 @@ const getGfgScores = catchAsyncErrors(async (req, res) => {
 
     const userName = (req.params.id).trim();
 
-    // console.log(userName)
+    console.log(userName)
 
 
     if (!userName) {
