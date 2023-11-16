@@ -45,7 +45,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Route Imports
 
-app.get("/:id", getGfgScores);
+app.get("/gfg/:id", getGfgScores);
 
 app.get("*", (req, res) => {
     return res.json({ 
